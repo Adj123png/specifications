@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手机参数查询</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>手机参数查询</h1>
+    
+    <input type="text" id="searchInput" placeholder="输入手机型号搜索" onkeyup="filterPhones()">
+    <select id="sortOptions" onchange="sortPhones()">
+        <option value="name">按名称排序</option>
+        <option value="processor">按处理器排序</option>
+        <option value="screenSize">按屏幕尺寸排序</option>
+    </select>
+    
+    <div id="phoneDetails" class="details"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
